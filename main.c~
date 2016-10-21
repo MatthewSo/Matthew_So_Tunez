@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "Linked_list.h"
+
+int main(){ 
+/* Introduction */ 
+  printf("Production of John Park and Matthew So\n"); 
+  printf("Period 4\n"); 
+  printf("Project 0: Tunez\n"); 
+  printf("October 21, 2016\n"); 
+/* Initialization */ 
+  song_node* playlist = insert_front(0, "blank space", "taylor swift");
+  playlist = insert_ordered(playlist, "22", "taylor swift");
+  playlist = insert_ordered(playlist, "work", "rhianna");
+  playlist = insert_ordered(playlist, "singleladies", "beyonce"); 
+/* Testing find */
+  print_list(playlist);
+  printf("Testing find:\n"); 
+printf("t artists: \n"); 
+return 0; 
+}
